@@ -127,8 +127,10 @@ nav ul{
     text-align: center;
     justify-content: space-evenly;
     list-style: none;
-    background-color: darkgray;
     padding: 10px;
     font-size: 200%;
+}
+.home:hover{
+    transform: scale(0.5);
 }
 
