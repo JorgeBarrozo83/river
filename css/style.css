@@ -110,30 +110,7 @@ nav ul{
     padding: 10px;
     font-size: 200%;
 }
-.home:hover{
-    transform: scale(1.2);
-    transition: all 2s;
-}
-.compraVenta:hover{
-    transform: translateY(90px);
-    transition: all 3s;
-}
-.giros:hover{
-    transform: translateY(90px);
-    transition: all 3s;
-}
-.prestamos:hover{
-    transform: translateY(90px);
-    transition: all 3s;
-}
-.cuentas:hover{
-    transform: translateY(90px);
-    transition: all 3s;
-}
-.contacto:hover{
-    transform: translateY(90px);
-    transition: all 3s;
-}
+
 @media (max-width:992px) {
     .grilla{
     grid-template-areas: 
