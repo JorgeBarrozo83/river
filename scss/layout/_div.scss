@@ -1,0 +1,26 @@
+
+.orden{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:space-around;
+    padding: 30px 0px 30px 60px;
+    gap: 50px;
+   
+    
+   .card:hover{
+    transform: translateY(-15px);
+}
+
+    &-body{
+        width: 300px;
+        height: 200px;
+    }
+
+    &-text{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+
+

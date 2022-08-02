@@ -1,144 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.grilla{
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns:repeat(5 1fr);
-    grid-template-rows:repeat(5 1fr);
-    grid-template-areas:
-    "nombre nombre nombre nombre mail"
-    "texto texto texto texto mail"
-    "home home home home home"
-    "prestamos compra giros cuentas contacto"
-    "footer footer footer footer footer";
-    gap: 15px;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-.marca{
-    grid-area: nombre;
-    text-align: center;
-    justify-content: center;
-    background-color: crimson;
-    padding: 30px 0px 30px 0px;
-    border: 15px solid rgba(255, 0, 0, 0.849);
-}
+body {
+  background-color: beige;
+  width: 100%;
+  height: 100%; }
 
-div.home{
-    grid-area: home;
-    text-align: center;
-    background-color: blue;
-}
-div.compraVenta{
-    grid-area: compra;
-    background-color: brown;
-}
-div.prestamos{
-    grid-area: prestamos;
-    background-color: burlywood;
-}
-div.giros{
-    grid-area: giros;
-    background-color: darkcyan;
-}
-div.cuentas{
-    grid-area: cuentas;
-    background-color: darkgreen;
-}
-div.contacto{
-    grid-area: contacto;
-    background-color: crimson;
-}
-.rg{
-    grid-area: mail;
-    background-color: coral;
-}
-.mail{
-    padding: 60px;
-}
-.consultas{
-    padding: 80px;
-   background-image:url(../img/contacto.webp);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   font-size: 25px;
-}
-   
-body{
-    background-color: palegreen;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#carouselExampleControls{
-   width: 20%;
-   display: grid;
-   justify-content: center;
-   padding: 0px;
-}
-a{
+.grilla {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  background-color: #6f6fcc; }
+  .grilla li a {
     text-decoration: none;
-   }
+    color: lightblue; }
 
-.textoInicio{
-    grid-area: texto;
-    background-color: rgb(180, 221, 105);
-    padding: 20px 0px 20px 0px;
+.orden {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  padding: 30px 0px 30px 60px;
+  gap: 50px; }
+  .orden .card:hover {
+    transform: translateY(-15px); }
+  .orden-body {
+    width: 300px;
+    height: 200px; }
+  .orden-text {
     text-align: center;
-}
+    font-size: 25px; }
 
-.redesSociales{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+footer {
+  color: lightblue;
+  display: flex;
+  justify-content: center;
+  background-color: #464679;
+  font-size: 35px;
+  padding: 50px 0px 50px 0px; }
+  footer .redesSociales {
+    justify-content: space-evenly; }
 
-footer{
-    grid-area: footer;
-    justify-content:center;
-    font-size: 150%;
-    background-color: aquamarine;
-    padding: 30px;
-    margin-top: 20%
-}
-nav ul{
-    text-align: center;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 10px;
-    font-size: 200%;
-}
+h1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #464679;
+  color: lightblue;
+  font-size: 60px;
+  padding: 80px; }
 
-@media (max-width:992px) {
-    .grilla{
-    grid-template-areas: 
-    "nombre nombre mail"
-    "texto texto mail"
-    "home home home"
-    "prestamos prestamos prestamos"
-    "giros cuentas compra"
-    "contacto contacto contacto"
-    "footer footer footer";
-    grid-template-columns:repeat(3 1fr);
-    grid-template-rows: repeat(3 1fr);
-    
-    }
-}
-@media (max-width:576px) {
-    .grilla{
-    grid-template-columns: 1fr; 
-    grid-template-areas: 
-    "nombre"
-    "texto"
-    "mail"
-    "home"
-    "prestamos"
-    "compra"
-    "giros"
-    "cuentas"
-    "contacto"
-    "footer";
-    }
-}
+h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 50px 5px 50px; }

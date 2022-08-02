@@ -1,0 +1,14 @@
+.grilla{
+    display: flex;
+    list-style: none ;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+    background-color: rgb(111, 111, 204);
+    li a{
+        text-decoration: none;
+        color: $font-principal;
+    }
+    
+}
