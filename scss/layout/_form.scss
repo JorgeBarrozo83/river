@@ -1,0 +1,11 @@
+.mail{
+@include medidas;
+padding: 160px 0px 300px 0px;
+flex-direction: column;   
+@include flex (space-around, center, nowrap);
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+font-size: 25px;}
+.consultas{
+    @extend .mail;
+  }

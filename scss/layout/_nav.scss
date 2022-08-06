@@ -1,10 +1,8 @@
 .grilla{
+    list-style-type: none;
     width: 100%;
-    display: flex;
-    list-style: none ;
+    @include flex(space-evenly, center, nowrap);
     flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
     font-size: 25px;
     background-color: rgb(111, 111, 204);
     li a{
