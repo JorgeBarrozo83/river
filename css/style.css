@@ -22,6 +22,10 @@ body {
     text-decoration: none;
     color: lightblue; }
 
+li:hover {
+  background: blue;
+  transition: all 1s; }
+
 .orden {
   width: 100%;
   margin: 15px;
@@ -33,13 +37,59 @@ body {
   flex-wrap: wrap;
   gap: 50px; }
   .orden .card:hover {
-    transform: translateY(-15px); }
+    transform: translateY(-15px);
+    transition: all 1s; }
   .orden-body {
     width: 300px;
     height: 200px; }
   .orden-text {
     text-align: center;
     font-size: 25px; }
+
+.card {
+  box-shadow: 1px 2px 1px;
+  color: grey; }
+
+.check {
+  justify-content: center; }
+
+.lbl {
+  display: inline-block;
+  width: 65px;
+  height: 33px;
+  background: #979797;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: .2s; }
+
+.lbl::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #eee;
+  border-radius: 100px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: .2s; }
+
+#switch:checked + .lbl::after, #switch1:checked + .lbl::after, #switch3:checked + .lbl::after, #switch2:checked + .lbl::after {
+  left: 35px; }
+
+#switch:checked + .lbl, #switch1:checked + .lbl, #switch3:checked + .lbl, #switch2:checked + .lbl {
+  background: #00C8B1; }
+
+#switch, #switch1, #switch3, #switch2 {
+  display: none; }
+
+.giros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  text-align: center; }
 
 footer {
   color: lightblue;
@@ -59,13 +109,21 @@ h1 {
   background-color: #464679;
   color: lightblue;
   font-size: 60px;
-  padding: 80px; }
+  padding: 70px; }
 
 h2 {
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 5px 50px 5px 50px; }
+
+h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 35px; }
 
 .mail, .consultas {
   width: 100%;

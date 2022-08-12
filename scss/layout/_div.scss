@@ -8,6 +8,7 @@
     gap: 50px;
     .card:hover{
     transform: translateY(-15px);
+    transition: all 1s;
 }
     &-body{
         width: 300px;
@@ -17,6 +18,62 @@
         text-align: center;
         font-size: 25px;
     }
+}
+.card{
+    box-shadow: 1px 2px 1px;
+    color: grey;
+}
+.check{
+    
+    justify-content: center;
+}
+.lbl{
+    display: inline-block;
+    width: 65px;
+    height: 33px;
+    background: #979797;
+    border-radius: 100px;
+    cursor:pointer;
+    position: relative;
+    transition: .2s;
+}
+.lbl::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    border-radius: 100px;
+    position: absolute;
+    top:4px;
+    left: 4px;
+    transition: .2s;
+}
+#switch:checked + .lbl::after{
+    left: 35px;
+}
+#switch:checked + .lbl{
+    background: #00C8B1;
+}
+#switch{
+    display: none;
+}
+#switch1{
+    @extend #switch
+}
+
+#switch2{
+    @extend #switch
+}
+#switch3{
+    @extend #switch1
+}
+.giros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
 
