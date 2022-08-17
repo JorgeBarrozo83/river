@@ -7,5 +7,38 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 text-align: center;
 font-size: 25px;}
 .consultas{
-    @extend .mail;
+    @include flex (space-evenly, center,nowrap);
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
+.boton{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 15px;
+}
+.confirm1 , .confirm2{
+  background-color:whitesmoke;
+  border-radius: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.confirm1:hover{
+  background-color: #00C8B1;
+}
+.confirm2:hover{
+  background-color: rgb(231, 71, 71);
+}
+.cuotas{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.pago{
+  margin:10px 25% 10px 25%;
+}
