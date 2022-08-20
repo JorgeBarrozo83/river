@@ -1,5 +1,5 @@
 .mail{
-@include medidas;
+max-width: 100%;
 padding: 160px 0px 300px 0px;
 flex-direction: column;   
 @include flex (space-around, center, nowrap);

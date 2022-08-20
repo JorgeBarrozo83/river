@@ -10,7 +10,7 @@
     <title>Cuentas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    
+    <link rel="icon" href="../img/favicon (1).ico">
 </head>
 <body>
     <header>
@@ -18,7 +18,12 @@
                 <h1 class="marca">River Busine$$</h1>
                 <h2 class="textoInicio">Este es el saldo de todas tus monedas</h2>
             </main>
-        <nav>        
+        <nav> 
+            <div class="nav-menu">
+                <input type="checkbox" id="navBar">
+                <label for="navBar" class="checkbtn">
+                <i class="menu-icon"><img src="../img/navBar125.png"></i>
+                </label>       
             <ul class="grilla">    
                 <li> 
                     <a href="./compraVenta.html">CompraVenta</a>
@@ -42,7 +47,84 @@
                     <a href="../index.html">Home</a>
                 </li>
             </ul>
+            </div>
         </nav>
+        <div class="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/compraVentapng640.png" class="w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/contactospng640 (1).png" class=" w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/cuenta640.png" class="w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/girospng640.png" class="w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/prestamospng640.png" class="w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/prestamospng640.png" class="w-100" alt="...">
+              </div>
+            </div>
+        </div>
+        <form class="pago">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+            <option selected>Selecciona</option>
+            <option value="1">Ingresar dinero</option>
+            <option value="2">Retirar dinero</option>
+            </select>
+        </form>
+        <form class="pago">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+            <option selected>Selecciona</option>
+            <option value="1">Mi Cbu</option>
+            <option value="2">Tarjeta de Débito</option>
+            </select>
+        </form>
+        <form class="pago">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+            <option selected>Selecciona</option>
+            <option value="1">Pesos ARS</option>
+            <option value="2">Dólares</option>
+            </select>
+        </form>
+        <div class="cuenta">
+        <div class="saldo">
+        <section>
+            <img class="img" src="../img/peso.png">
+            <label class="column" for="monto">Saldo</label>
+            <input type="number" name="saldo" />
+        </section>
+        </div>
+        <div class="saldo">
+        <section>
+            <img class="img" src="../img/dolares305.jpg">
+            <label class="column" for="monto">Saldo</label>
+            <input type="number" name="saldo" />
+        </section>
+        </div>
+        <div class="saldo">
+        <section>
+            <img class="img" src="../img/bitcoin.png">
+            <label class="column" for="monto">Saldo</label>
+            <input type="number" name="saldo" />
+        </section>
+        </div>
+        <div class="saldo">
+        <section>
+            <img class="img" src="../img/ethereum.png">
+            <label class="column" for="monto">Saldo</label>
+            <input type="number" name="saldo" />
+        </section>
+        </div>
+        </div>
     </header>
     <footer>
     The River Company

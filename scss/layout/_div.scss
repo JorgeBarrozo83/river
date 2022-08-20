@@ -1,15 +1,17 @@
 
 .orden{
-    width: 100%;
+    max-width: 100%;
     margin: 15px;
     border-radius: 5px;
     display: flex;
     @include flex (space-around, center,wrap);
     gap: 50px;
-    .card:hover{
-    transform: translateY(-15px);
-    transition: all 1s;
-}
+    @media (hover:hover){
+        .card:hover{
+            transform: translateY(-15px);
+            transition: all 1s;
+        }
+    }
     &-body{
         width: 300px;
         height: 200px;
@@ -23,6 +25,7 @@
 .card{
     box-shadow: 1px 2px 1px;
     color: grey;
+    width: 30rem;
 }
 .check{
     display: flex;
@@ -83,13 +86,16 @@
     @extend #switch
 }
 .giros{
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 .moneda{
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -108,17 +114,55 @@
     @extend .giros;
     font-size: 20px;
 }
+.cuotas{
+    padding: 30px;
+}
 .img{
     box-shadow: 2px 5px 5px;
     padding: 5px;
     margin-bottom: 40px;
 }
 .cv{
+    width: 50%;
+    padding: 35px;
+    margin: 5% 25% 0% 25%;
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
-    flex-direction:row;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    .saldo{
+        padding-bottom: 50px;
+    }
+}
+
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #navBar{
+    display: none;
+}
+.carousel{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    object-fit: cover;
+} 
+.cuenta{
+    @extend .cv;
+}   
+.column{
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    justify-content: center;
 }
 
 

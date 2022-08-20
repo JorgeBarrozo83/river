@@ -1,6 +1,6 @@
 .grilla{
     list-style-type: none;
-    width: 100%;
+    max-width: 100%;
     @include flex(space-evenly, center, nowrap);
     flex-direction: row;
     font-size: 25px;
