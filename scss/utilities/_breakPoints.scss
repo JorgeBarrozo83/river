@@ -15,7 +15,7 @@
         top: 140px;
         left: -100%;
         width: 100%;
-        height: 82vh;
+        height: 83vh;
         right: 0;
         z-index: 1;
     }
@@ -110,5 +110,11 @@
     }
     .boton{
         font-size: 1rem;
+    }
+    .cantidad{
+        max-width: 100%;
+        font-size: 1.2rem;
+        width: 100px;
+        justify-content: center;
     }
 }  
