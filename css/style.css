@@ -272,7 +272,7 @@ h3 {
     right: 0;
     z-index: 1; }
   .nav-menu ul li {
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     margin: 0;
